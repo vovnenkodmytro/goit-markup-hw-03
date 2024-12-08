@@ -3,6 +3,19 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -41,6 +54,9 @@ a {
   }
   .footer-logo .logo-part {
     color: #f4f4fd;
+  }
+  .section {
+    padding: 120px 0;
   }
 /* #region header */
 .header-container {
@@ -98,11 +114,11 @@ a {
   /* #region hero */
   .hero-section {
     background-color: #2e2f42;
+    padding: 188px;
     
 }
 .hero-section-title {
     max-width: 496px;
-    padding: 188px 0;
     color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
@@ -134,12 +150,16 @@ a {
   /* #endregion hero */
   /* #region hello */
   .hello-section {
+    padding: 120px 0;
 }
 .hello-section-title {
 }
 .hello-section-list {
+    display: flex;
+    gap: 24px;
 }
 .hello-list-item {
+    width: calc((100% - 72px) / 4);
 }
 .hello-title {
     color: #2e2f42;
@@ -147,6 +167,7 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .hello-descr {
     color: #434455;
